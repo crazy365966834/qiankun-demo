@@ -1,5 +1,6 @@
 # qiankun-demo
 
+```
 cd microapp
 npm i
 npm run serve
@@ -14,3 +15,4 @@ cd mainapp
 npm i
 npm run serve
   - Local:   http://localhost:8001/
+```
