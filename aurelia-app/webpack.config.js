@@ -42,7 +42,7 @@ module.exports = ({ production } = {}, {extractCss, analyze, tests, hmr, port, h
     path: outDir,
     publicPath: baseUrl,
     filename: 'js/app.js',
-    library: `SpmsApp`,
+    library: `aureliaApp`,
     libraryTarget: 'umd',
     jsonpFunction: `webpackJsonp_SpmsApp`,
   },

@@ -3,15 +3,15 @@ const getActiveRule = (pathname) => (location) => {
 };
 
 const apps = [{
-  name: 'VueMicroApp',
+  name: 'vueApp',
   entry: '//localhost:10200',
   container: '#frame',
-  activeRule: getActiveRule('/app/'),
+  activeRule: getActiveRule('/vue/'),
 }, {
-  name: 'SpmsApp',
+  name: 'aureliaApp',
   entry: '//localhost:8080',
   container: '#frame',
-  activeRule: getActiveRule('/spms/'),
+  activeRule: getActiveRule('/aurelia/'),
 }];
 
 export default apps;

@@ -15,10 +15,10 @@ let aurelia;
 
 // 独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
-  // document.querySelector('#spmsApp').innerHTML = 'Hello, render with jQuery';
+  // document.querySelector('#aureliaApp').innerHTML = 'Hello, render with jQuery';
   render().then(aurelia => {
     console.log('res', aurelia);
-    aurelia.setRoot(PLATFORM.moduleName('app'), document.querySelector('#spmsApp'));
+    aurelia.setRoot(PLATFORM.moduleName('app'), document.querySelector('#aureliaApp'));
   });
 }
 
@@ -32,7 +32,7 @@ export async function mount(props) {
   console.log('[vue] props from main framework', props);
   const {container} = props;
   aurelia.setRoot(PLATFORM.moduleName('app'),
-    container ? container.querySelector('#app') : document.querySelector('#spmsApp'));
+    container ? container.querySelector('#aureliaApp') : document.querySelector('#aureliaApp'));
 }
 
 export async function unmount() {

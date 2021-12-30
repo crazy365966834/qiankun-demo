@@ -39,7 +39,7 @@ const routes = [
      * name: 路由的 name 为 Home
      * component: 触发路由时加载 `Home` 组件
      */
-    path: '/app/*',
+    path: '/vue/*',
     name: 'App',
     component: () => import('../pages/app/index.vue'),
   },
@@ -49,7 +49,7 @@ const routes = [
      * name: 路由的 name 为 Home
      * component: 触发路由时加载 `Home` 组件
      */
-    path: '/spms/*',
+    path: '/aurelia/*',
     name: 'App',
     component: () => import('../pages/app/index.vue'),
   },

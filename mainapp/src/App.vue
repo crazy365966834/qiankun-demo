@@ -2,12 +2,12 @@
   <div id="root">
     <img alt="Vue logo" src="./assets/logo.png">
     <div id="container">mainapp</div>
-    <button @click="doRoute('/home')">转home</button>
-    <button @click="doRoute('/test')">body</button>
-    <button @click="doRoute('/app/#/home')">转vue/home</button>
-    <button @click="doRoute('/app/#/test')">转vue/test</button>
-    <button @click="doRoute('/spms/#/home')">转spms/home</button>
-    <button @click="doRoute('/spms/#/user')">转spms/test</button>
+    <button @click="doRoute('/home')">goto home</button>
+    <button @click="doRoute('/test')">goto body</button>
+    <button @click="doRoute('/vue/#/home')">goto vue/home</button>
+    <button @click="doRoute('/vue/#/test')">goto vue/test</button>
+    <button @click="doRoute('/aurelia/#/home')">goto aurelia/home</button>
+    <button @click="doRoute('/aurelia/#/user')">goto aurelia/test</button>
 
     <router-view/>
   </div>
